@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>test login page</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=devixe-width,initial-scale=1">
+        <link rel="stylesheet" href="login_css.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/5083ef2f37.js" crossorigin="anonymous"></script>
+    </head>
+            <body>
+                <div class="bg">
+                    <div class="formbox">
+                        <div class="logo">
+                            <img src="img\logo white.png">
+                        </div>
+                        <div class=buttonbox>
+                            <div id="btn"></div>
+                            <button type="button" class="tog-button" onclick="login()">Sign in</button>
+                            <button type="button" class="tog-button" onclick="register()">Sign up</button>
+                        </div>
+                        <form class="input" id="login">
+                            <div class="input-user-pass">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <input type="text"  placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-user-pass">
+                                <i class="fas fa-lock" aria-hidden="true"></i>
+                                <input type="text"  placeholder="Enter your password" required>
+                            </div>
+                            <input type="checkbox" class="checkbox"><span>Remember me</span>
+                            <button type="submit" class="sub-btn">Sign in</button>
+                        </form>
+                        <form class="input" id="register">
+                            <div class="input-user-pass">
+                                <i class="fas fa-user" aria-hidden="true"></i>
+                                <input type="text"  placeholder="Enter your username" required>
+                            </div>
+                            <div class="input-user-pass">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <input type="text"  placeholder="Enter your email" required>
+                            </div>
+                            <div class="input-user-pass">
+                                <i class="fas fa-lock" aria-hidden="true"></i>
+                                <input type="text"  placeholder="Enter your password" required>
+                            </div>
+                            <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
+                            <button type="submit" class="sub-btn">Sign up</button>
+                        </form>
+                        <div class="social-icons">
+                            <img src="img\fb-icon.jpg">
+                            <img src="img\mail-icon.jpg">
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var x=document.getElementById("login");
+                    var y=document.getElementById("register");
+                    var z=document.getElementById("btn");
+                    function register(){
+                        x.style.left ="-400px";
+                        y.style.left ="50px";
+                        z.style.left ="110px";
+                    }
+                    function login(){
+                        x.style.left ="50px";
+                        y.style.left ="450px";
+                        z.style.left ="0px";
+                    }
+                </script>   
+            </body>
+</html>
