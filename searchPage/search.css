@@ -123,7 +123,7 @@ h1{
 
 .search-btn{
     height: 50px;
-    width: 150px;
+    width: 100px;
     background: #e9ecef;
     border: none;
     color: #000;
@@ -135,10 +135,13 @@ h1{
 }
 
 .name{
-    width: 400px;
+    width: 600px;
 
 }
 
 .type{
     width: 200px;
+}
+.form-box{
+  justify-content: center;
 }
