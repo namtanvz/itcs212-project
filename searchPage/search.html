@@ -4,27 +4,33 @@
         <title> Search page test</title>
         <link rel="stylesheet" href="search.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script>
+            $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+            </script>
     </head>
     <body>
-        <div class="container">
-            <div class="nav">
-                <img src="images/logo black.png" class="logo">
-                <div class="menu">
-                    <ul>
-                       <li><a href="#">HOME</a></li>
-                       <li><a href="#">ABOUT</a></li>
-                       <li><a href="#">SERVICE</a></li>
-                       <li><a href="#">DESIGN</a></li>
-                       <li><a href="#">CONTACT</a></li>
-                    </ul> 
-                </div>
-                <!-- <div class="search">
-                    <input class="srch" type="Search" name="Search" placeholder="Search Here">
-                    <a href="#"> <button class="button"> Search </button></a>
-                </div> -->
-            </div>
+        <nav>
+            <ul class='menu'>
+                <li class='logo'> <a href="#"> <img src="images/logo white.png" class="logo"> </li>
+                <li class='item'> <a href="#"> Home </a> </li>
+                <li class='item'> <a href="#"> About Us </a></li>
+                <li class='item'> <a href="#"> Search </a> </li>
+                <li class="item button"><a href="#"> Log In </a> </li>
+                <!-- <li class='item button secondary'> <a href="#"> Sign up </li> -->
+                <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li>
+                <!-- <a class="nav-link" href='#'> <button> Login </button></a> -->
+            </ul>
+        </nav>
         
             <div class="box">
             <form>
