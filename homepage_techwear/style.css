@@ -8,7 +8,7 @@ body {
     margin: 0;
     color: #fff;
     background: rgb(0, 0, 0);
-    font-family: sans-serif;
+   
 }
 
 .parallax-container {
@@ -61,10 +61,18 @@ a {
     transform: translate(0, -50%);
 }
 
-.nav{
-    background: black;
-    padding: 10px 20px;
-    letter-spacing: 1.87px;
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* NAV BAR */
+
+nav{
+    background: #0e0c0a;
+    padding: 5px 20px;
+    letter-spacing: 3px;
+    font-family: Roboto, sans-serif;
     
 }
 li {
@@ -76,34 +84,40 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: teal;
+    color: rgb(139, 150, 150);
 
 }
 
 .menu li{
-    font-size: 14px;
+    font-size: 12px;
     padding: 15px 5px;
     
 }
 
 .menu li a{
     display: block;
-    /* font-weight: bold; */
+    font-weight: bold;
     text-transform: uppercase;
     transition: 0.4s ease-in-out;
 }
 
 .logo {
-    width: 70px;
-    cursor: pointer;
-    margin: 0;
+    position:relative; 
+    left:20px;
+    padding-top: 5px;
+    padding-right: 10px;
+    width: 50px;
 }
 
 /* Mobile */
 .menu {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items:center;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items:center;
 }
 .toggle {
@@ -171,16 +185,20 @@ a:hover{
     .toggle{
         order: 2;
     }
+    .button.secondary{
+        border: 0;
+    }
     .button a{
         padding: 7px 15px;
-        background: linear-gradient(to right,#28231d,#3a3939);
-        border: none;
+        background: linear-gradient(to right,#3d362c,#504f4f);
         border-radius:50em;
     }
     
-    .button a:hover{
+    /* .button a:hover{
         transition: all 0.25s ease 0s;
-    }
+        background: #006d6d;
+        border-color: #005959;
+    } */
 }
 
 @media all and (min-width: 768px){
@@ -206,9 +224,4 @@ a:hover{
     .menu li.button{
         padding-right: 0;
     }
-}
-
-.parallax-container {
-    position: relative;
-    overflow: hidden;
 }

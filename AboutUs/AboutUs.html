@@ -10,9 +10,34 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/5083ef2f37.js" crossorigin="anonymous"></script>
         <link href="AboutUs.css" rel="stylesheet">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+        </script>
         
     </head>
     <body>
+        <nav>
+            <ul class='menu'>
+                <li class='logo'> <a href="#"> <img src="images/logo white.png" class="logo"> </li>
+                <li class='item'> <a href="#"> Home </a> </li>
+                <li class='item'> <a href="#"> About Us </a></li>
+                <li class='item'> <a href="#"> Search </a> </li>
+                <li class="item button"><a href="#"> Log In </a> </li>
+                <!-- <li class='item button secondary'> <a href="#"> Sign up </li> -->
+                <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li>
+                <!-- <a class="nav-link" href='#'> <button> Login </button></a> -->
+            </ul>
+        </nav>
         <div class="container">
             <div class="header">
                 <h1>Our Team</h1>
