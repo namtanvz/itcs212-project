@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{
+    background-color: #24252A;
+    padding: 5px 20px;
+}
+li {
+    list-style-type: none;
+}
+a{
+    color: #edf0f1;
+    text-decoration: none;
+}
+/* a:hover{
+    color: red;
+
+} */
+
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.menu li a{
+    display: block;
+}
+
+.logo {
+    padding-top: 5px;
+    padding-right: 10px;
+    width: 50px;
+}
+/* .button.secondary {
+    border-bottom: 1px #444 solid;
+} */
+
+/* Mobile */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+.toggle {
+    order: 1;
+}
+
+.item.button {
+    order: 2;
+}
+
+.item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+.toggle{
+    cursor: pointer;
+}
+
+.bar{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative; 
+    width: 16px;
+}
+
+.bar::before,.bar::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute; 
+    width: 16px;
+}
+
+
+.bar::before{
+    top: 5px;
+}
+
+.bar::after{
+    top: -5px;
+}
+
+/* Tablet */
+
+@media all and (min-width:468px){
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+    }
+    .item.button{
+        width:auto;
+        order: 1;
+        display: block;
+    }
+    .toggle{
+        order: 2;
+    }
+    .button.secondary{
+        border: 0;
+    }
+    .button a{
+        padding: 7px 15px;
+        background: teal;
+        border: 1px #006d6d solid;
+        border-radius:50em;
+    }
+    
+    .button a:hover{
+        transition: all 0.25s ease 0s;
+        background: #006d6d;
+        border-color: #005959;
+    }
+}
+
+@media all and (min-width: 768px){
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle {
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+    }
+    .button{
+        order: 2;
+    }
+    .menu li{
+        padding: 15px 10px;
+    }
+    .menu li.button{
+        padding-right: 0;
+    }
+}

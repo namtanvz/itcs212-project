@@ -25,6 +25,7 @@ body{
     position: relative;
     letter-spacing: 1.87px;
     
+    
   }
   
 .logo{
@@ -61,7 +62,7 @@ body{
   }
   
   ul li a:hover{
-    color: red
+    color: red;
   }
   
   .search{
@@ -70,7 +71,7 @@ body{
     margin-left: 580px;
     transition: ease;
   }
-  .srch{
+  /* .srch{
     width: 150px;
     height: 40px;
     border: 1px solid #e9ecef;;
@@ -83,8 +84,8 @@ body{
     background-color: #e9ecef;
     text-overflow: ellipsis;
     /* border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px; */
-  }
+    border-top-left-radius: 5px;
+  } */
   
   .button{
     width: 100px;
@@ -97,13 +98,14 @@ body{
     border-top-right-radius: 5px; */
   }
   
-.header{
+.box{
     height: 100vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content:center;
     align-items:center;
+    /* background-color: #24252A; */
 }
 
 h1{
@@ -119,6 +121,7 @@ h1{
     border: none;
     outline: none;
     background: #e9ecef;
+    
 }
 
 .search-btn{
@@ -127,10 +130,11 @@ h1{
     background: #e9ecef;
     border: none;
     color: #000;
+
 }
 
 .search-btn:hover{
-    background: #ffc107;
+    background: red;
     cursor: pointer;
 }
 
