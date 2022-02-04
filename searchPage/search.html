@@ -27,65 +27,16 @@
             });
         </script>
         </div> 
-        <div class="searchbar">
-            <form>
-                <div class="basic">
-                    <div class="input-field">
-                        <input id="search" type="text" placeholder="What are you looking for?">
-                    </div>
-                </div>
-                <div class="advance">
-                    <span class="description"> Advance search </span>
-                <div class="row">
-                    <div class="input-field">
-                        <div class="select">
-                            <select trigger="" name="choice">
-                                <option placeholder="" value="">
-                                    Size
-                                </option>
-                                <option> S </option>
-                                <option> M </option>
-                                <option> L </option>
-                                <option> XL </option>
-                            </select>  
-                        </div>
-                    </div>
-                    <div class="input-field">
-                        <div class="select">
-                            <select trigger="" name="choice">
-                                <option placeholder="" value="">
-                                    Gender
-                                </option>
-                                <option> Women </option>
-                                <option> Men </option>
-                                <option> Unisex </option>
-                            </select>  
-                        </div>
-                    </div>
-                    <div class="input-field">
-                        <div class="select">
-                            <select trigger="" name="choice">
-                                <option placeholder="" value="">
-                                    Product Type
-                                </option>
-                                <option> T-shirts </option>
-                                <option> Pants </option>
-                                <option> Hoodies </option>
-                            </select>  
-                        </div>
-                    </div>
-                </div>
-                <div class="secondrow">
-                    <div class="input-field">
-                        <div class="btn">
-                            <button class="reset" id="delete"> Reset</button>
-                            <button class="searchbtn"> Search </button>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            </form>
+        <header class="header">
+            <h1 class="title">
+                Search
+            </h1>
+        </header>
+
+        <div class="input">
+            <input id="search" type="text" placeholder="What are you looking for?">
         </div>
+
         <div id="footer">
             <script>
                 $.get("../footer/footer.html", function(data){

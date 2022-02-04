@@ -5,119 +5,12 @@
   font-family: sans-serif;
 }
 
-.searchbar{
-  min-height: 100vh;
-  display: -ms-flexbox;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: flex;
-  padding: 15px;
-  background: #dbd7d7; 
-}
-.searchbar form {
-  width: 100%;
-  max-width: 790px;
-  margin-top: -5px;
-}
-
-.searchbar form .basic .input-field{
-  position: relative;
-  overflow: hidden;
-  border-radius: 34px;
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-
-}
-.searchbar form .basic .input-field input{
-  height: 100%; 
-  border: 0;
-  display: block;
-  width: 100%;
-  padding: 10px 32px 10px 70px;
+.title {
+  text-transform: uppercase;
   font-size: 18px;
-  height: 70px;
-  color: #fff;
-  background: linear-gradient(to right,#3d362c,#504f4f);
-}
-
-.searchbar form .advance{
-  background: #fff;
-  padding: 40px;
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 10px;
-}
-
-.searchbar form .advance .description{
-  font-size: 14px;
-  display: block;
-  margin-bottom: 25px;
-}
-
-
-.searchbar form .advance .row{
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.searchbar form .advance .secondrow{
-  margin-bottom: 0;
-}
-
-.searchbar form .advance .secondrow .input-field{
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.searchbar form .advance .secondrow .input-field .reset{ 
-  min-width: 100px;
-  height: 40px;
-  padding: 0 15px;
-  background: transparent;
-  white-space: nowrap;
-  border-radius: 0;
-  font-size: 14px;
-  color: #666;
-  transition: all .2s ease-out, color .2s ease-out;
-  border: 0;
-  cursor: pointer;
-  font-weight: 400;
-
-}
-
-.searchbar form .advance .secondrow .input-field .searchbtn{ 
-  min-width: 100px;
-  height: 40px;
-  padding: 0 15px;
-  background: linear-gradient(to right,#3d362c,#504f4f);
-  white-space: nowrap;
-  border-radius: 20px;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-  transition: all .2s ease-out, color .2s ease-out;
-  border: 0;
-  font-weight: 400;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
-  z-index: 0;
-  position: relative;
-}
-.searchbar form .advance .secondrow .input-field .searchbtn:hover{
-  background: linear-gradient(to left,#3d362c,#504f4f);
-
-}
-.searchbar form .advance .input-field{
-  height: 40px;
+  text-align: center;
+  margin-top:10px;
+  font-weight:900;
 }
 
 
