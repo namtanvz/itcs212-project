@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Search page test</title>
+        <title>Search page test</title>
         <link rel="stylesheet" href="search.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../footer/footer.css">
+        <link rel="stylesheet" href="../navigation/navigation.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" href="/resultPage/images/logo black.png" type="image/icon type">
+        <script>
+            $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+        </script>
     </head>
     <body>
-        <div class="container">
-            <div class="nav">
-                <img src="images/logo black.png" class="logo">
-                <div class="menu">
-                    <ul>
-                       <li><a href="#">HOME</a></li>
-                       <li><a href="#">ABOUT</a></li>
-                       <li><a href="#">SERVICE</a></li>
-                       <li><a href="#">DESIGN</a></li>
-                       <li><a href="#">CONTACT</a></li>
-                    </ul> 
-                </div>
-                <!-- <div class="search">
-                    <input class="srch" type="Search" name="Search" placeholder="Search Here">
-                    <a href="#"> <button class="button"> Search </button></a>
-                </div> -->
-            </div>
-        
-            <div class="box">
-            <form>
-                <div class="form-box">
-                    <input type="text" class="search-field name"
-                    placeholder="Product">
-                    <!-- <input type="text" class="search-field type"
-                    placeholder="text2"> -->
-                    <button class="search-btn" type="button"> 
-                        Search
-                    </button>
-                </div>
+        <div id="nav"> 
+        <script>
+            $.get("../navigation/navigation.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+        </script>
+        </div> 
+        <header class="header">
+            <h1 class="title">
+                Search
+            </h1>
+        </header>
 
-            </form>
+        <div class="input">
+            <input id="search" type="text" placeholder="What are you looking for?">
+        </div>
+
+        <div id="footer">
+            <script>
+                $.get("../footer/footer.html", function(data){
+                    $("#footer").replaceWith(data);
+                });
+            </script> 
         </div>
     </body>
 </html>

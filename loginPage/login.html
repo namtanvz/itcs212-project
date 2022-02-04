@@ -3,15 +3,26 @@
     <head>
         <title>test login page</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../footer/footer.css">
+        <link rel="stylesheet" href="../navigation/navigation.css">
         <meta name="viewpoint" content="width=devixe-width,initial-scale=1">
         <link rel="stylesheet" href="login_css.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/5083ef2f37.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" href="/resultPage/images/logo black.png" type="image/icon type">
     </head>
             <body>
                 <div class="bg">
+                    <div id="nav"> </div> 
+                        <script>
+                                $.get("../navigation/navigation.html", function(data){
+                                    $("#nav").replaceWith(data);
+                                });
+                        </script>
+                        
                     <div class="formbox">
-                        <div class="logo">
+                        <div class="logo2">
                             <img src="img\logo white.png">
                         </div>
                         <div class=buttonbox>
@@ -47,12 +58,16 @@
                             <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span>
                             <button type="submit" class="sub-btn">Sign up</button>
                         </form>
-                        <div class="social-icons">
-                            <img src="img\fb-icon.jpg">
-                            <img src="img\mail-icon.jpg">
-                        </div>
                     </div>
+                    <div id="footer">
+                        <script>
+                            $.get("../footer/footer.html", function(data){
+                                $("#footer").replaceWith(data);
+                            });
+                        </script> 
+                    </div>   
                 </div>
+
                 <script>
                     var x=document.getElementById("login");
                     var y=document.getElementById("register");
@@ -67,6 +82,6 @@
                         y.style.left ="450px";
                         z.style.left ="0px";
                     }
-                </script>   
+                </script>
             </body>
 </html>

@@ -2,42 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Techwear Clothes</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono&display=swap');
-    </style>
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../navigation/navigation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="/resultPage/images/logo black.png" type="image/icon type">
+    <script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+    </script>
 </head>
 
 <body>
-
-
-
-    <nav>
-        <div class="logo">
-            <img src="logo_tw.png" width="70" height="70">
-        </div>
-        <ul>
-            <li><a href="" class="active">home</a></li>
-            <li><a href="">products</a></li>
-            <li><a href="">about us</a></li>
-
-
-        </ul>
-
-        </div>
-
-    </nav>
-
-
-
-
-
-
-
+    <div id="nav"> </div>
+        <script>
+            $.get("../navigation/navigation.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+        </script>
+        
     <div class="parallax-container" style="height: 850px;">
         <img class="parallax" src="https://i.pinimg.com/originals/c4/5d/b6/c45db61b12136326cde57c13af9c4e2e.gif" alt="">
         <div class="teaser">
@@ -85,17 +79,13 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <h1>
-
-        </h1>
-        <p></p>
-        <h1></h1>
-        <p></p>
-    </footer>
-
-
+    <div id="footer">
+        <script>
+            $.get("../footer/footer.html", function(data){
+                $("#footer").replaceWith(data);
+            });
+        </script> 
+    </div>
     <script src="parallax.min.js"></script>
     <script>
         var parallax = new Parallax('.parallax');

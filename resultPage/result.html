@@ -1,50 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
     <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="../navigation/navigation.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="/resultPage/images/logo black.png" type="image/icon type">
+    <script>
+        $(function() {
+        $(".toggle").on("click", function() {
+            if ($(".item").hasClass("active")) {
+                $(".item").removeClass("active");
+            } else {
+                $(".item").addClass("active");
+            }
+        });
+    });
+    </script>
 </head>
 <body>
-    <div class="container">
-        <div class="nav">
-            <img src="images/logo black.png" class="logo">
-            <div class="menu">
-                <ul>
-                   <li><a href="#">HOME</a></li>
-                   <li><a href="#">ABOUNT </a></li>
-                   <li><a href="#">SERVICE</a></li>
-                   <li><a href="#">DESIGN</a></li>
-                   <li><a href="#">CONTACT</a></li>
-                </ul> 
-            </div>
-            <div class="search">
-                <input class="srch" type="Search" name="Search" placeholder="Search Here">
-                <a href="#"> <button class="button">Search</button></a>
-            </div>
-        </div>
+    <div id="nav"></div>
+        <script>
+            $.get("../navigation/navigation.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+        </script> 
+        
         <div class="row">
             <div class="col-1">
-                <h2>PRODUCT DETAILS</h2><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Sed enim ut sem viverra aliquet eget sit. 
-                    Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. 
-                    Eros donec ac odio tempor orci dapibus ultrices in. Mauris vitae ultricies leo integer malesuada nunc.</p>
-                <h4>Price bath</h4>
+                <h2>STREETWAR VEST TECHWEAR</h2><br>
+                <p>This streetwear vest is designed to provide you with comfortable clothes for everyday use in urban settings. 
+                    The vest has two front pockets for holding all of your gear and daily essentials. For any early morning activity, 
+                    this vest is ideal. This piece also has a futuristic appearance that will look great with any dark tech ensemble. 
+                    This is a one-of-a-kind combination of urban gear and techwear clothes trend.
+                </p><br>
+                    <ul>
+                        <li> 
+                            <b>Materials</b> : Polyester <br><br>
+                        </li>
+                        <li>
+                            <b>Design</b> : Techwear, Streetwear <br><br>
+                        </li>
+                        <li>
+                            <b>Machine washable</b> : 30°C (86°F) <br><br>
+                        </li>
+                        <li>
+                            <b>Free shipping</b> 
+                        </li>
+                    </ul>
+                <h4>1899 bath</h4>
                 <button type="button" class="buynow">Buy Now <img src="images/arrow.png"></button>
             </div>
             <div  class="col-2">
                 <img src="images/tc01.jpg" class="cloth1">
             </div>
         </div>
-        <div class="social">
-            <img src="images/fb.png">
-            <img src="images/tw.png">
-            <img src="images/ig.png">
-        </div>
+    </div>
+    <div id="footer">
+        <script>
+            $.get("../footer/footer.html", function(data){
+                $("#footer").replaceWith(data);
+            });
+        </script> 
     </div>
 </body>
 </html>

@@ -4,109 +4,110 @@
     margin: 0;
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
+/* NAV BAR */
 nav{
-    background-color: #24252A;
+    background: #0e0c0a;
     padding: 5px 20px;
-    letter-spacing: 1.87px;
+    letter-spacing: 3px;
+    font-family: sans-serif;
     
-}
-li {
+  }
+  li {
     list-style-type: none;
     
-}
-a{
+  }
+  
+  a{
     color: #edf0f1;
     text-decoration: none;
-}
-a:hover{
-    color: teal;
-
-}
-
-.menu li{
-    font-size: 14px;
+  }
+  a:hover{
+    color: rgb(139, 150, 150);
+  
+  }
+  
+  .menu li{
+    font-size: 12px;
     padding: 15px 5px;
     
-}
-
-.menu li a{
+  }
+  
+  .menu li a{
     display: block;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.4s ease-in-out;
-}
-
-.logo {
+  }
+  
+  .logo {
+    position:relative; 
+    left:20px;
     padding-top: 5px;
     padding-right: 10px;
-    width: 60px;
-}
-/* .button.secondary {
-    border-bottom: 1px #444 solid;
-} */
-
-/* Mobile */
-.menu {
-    display: flex;
+    width: 50px;
+  }
+  
+  /* Mobile */
+  .menu {
+    /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items:center;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items:center;
-}
-.toggle {
+  }
+  .toggle {
     order: 1;
-}
-
-.item.button {
+  }
+  
+  .item.button {
     order: 2;
-}
-
-.item {
+  }
+  
+  .item {
     width: 100%;
     text-align: center;
     order: 3;
     display: none;
-}
-
-.item.active {
+  }
+  
+  .item.active {
     display: block;
-}
-.toggle{
+  }
+  .toggle{
     cursor: pointer;
-}
-
-.bar{
+  }
+  
+  .bar{
     background: #999;
     display: inline-block;
     height: 2px;
     position: relative; 
     width: 16px;
-}
-
-.bar::before,.bar::after{
+  }
+  
+  .bar::before,.bar::after{
     background: #999;
     content: "";
     display: inline-block;
     height: 2px;
     position: absolute; 
     width: 16px;
-}
-
-
-.bar::before{
+  }
+  
+  .bar::before{
     top: 5px;
-}
-
-.bar::after{
+  }
+  
+  .bar::after{
     top: -5px;
-}
-
-/* Tablet */
-
-@media all and (min-width:468px){
+  }
+  
+  /* Tablet */
+  
+  @media all and (min-width:468px){
     .menu{
         justify-content: center;
     }
@@ -126,19 +127,18 @@ a:hover{
     }
     .button a{
         padding: 7px 15px;
-        background: teal;
-        border: 1px #006d6d solid;
+        background: linear-gradient(to right,#3d362c,#504f4f);
         border-radius:50em;
     }
     
-    .button a:hover{
+    /* .button a:hover{
         transition: all 0.25s ease 0s;
         background: #006d6d;
         border-color: #005959;
-    }
-}
-
-@media all and (min-width: 768px){
+    } */
+  }
+  
+  @media all and (min-width: 768px){
     .item{
         display: block;
         width: auto;
@@ -161,4 +161,6 @@ a:hover{
     .menu li.button{
         padding-right: 0;
     }
-}
+  }
+  
+  

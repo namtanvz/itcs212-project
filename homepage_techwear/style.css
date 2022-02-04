@@ -2,12 +2,15 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
+    
 }
 
 body {
     margin: 0;
     color: #fff;
     background: rgb(0, 0, 0);
+   
 }
 
 .parallax-container {
@@ -60,47 +63,8 @@ a {
     transform: translate(0, -50%);
 }
 
-nav {
-    width: 100%;
-    height: 70px;
-    background-color: #000000;
-    line-height: 75px;
-    padding: 0px 20px;
-    position: fixed;
-    z-index: 1;
-}
-
-nav .logo img {
-    float: left;
-    position: absolute;
-}
-
-nav ul {
-    float: right;
-}
-
-nav ul li {
-    display: inline-block;
-    list-style: none;
-}
-
-nav ul li a {
-    color: rgb(85, 85, 85);
-    text-decoration: none;
-    font-size: 18px;
-    text-transform: uppercase;
-    padding: 0px 32px;
-}
-
-nav ul li a:hover {
-    color: #fff;
-}
-
-nav ul li a.active {
-    color: #ffffff;
-}
-
 .parallax-container {
     position: relative;
     overflow: hidden;
 }
+
