@@ -5,15 +5,15 @@
     >                      - Winston Churchill
 
 ### Aom (AKA The Boss)
-    - Login Page
-    - User/Admin
+- Login Page
+- User/Admin
 
 ### Oat 
-    - Result Page
+- Result Page
 
 ### Mook
-    - Homepage/Landing Page
+- Homepage/Landing Page
 
 ### The one who owns this repo and cleaning this up
-    - Search Page
-    - Navigation Bar
+- Search Page
+- Navigation Bar
