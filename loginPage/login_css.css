@@ -1,18 +1,16 @@
 
 *{
-    margin: 0;
-    padding: 0;
     font-family: sans-serif;
     color:white;
 }
 .bg{
+
     height: 100%;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url("bg_fashion.jpg");
     filter: grayscale(100%);
-    background-position: center;
     background-size: cover;
-    position: absolute;
+    background-position: center;
 }
 .formbox{
     width:380px;
@@ -53,11 +51,14 @@
     margin: 280px auto;
     text-align: center;
 }
-.social-icons img{
+.social-icons i{
     width: 30px;
     margin: 0 12px;
     cursor: pointer;
     border-radius: 50%;
+}
+.social-icons i:hover{
+    transform: scale(1.5);
 }
 .input{
     top:180px;
@@ -111,12 +112,13 @@ span{
     float: left;
     margin: 3px;
 }
-.logo{
+.logo2{
     margin: 30px auto;
     text-align: center;
 }
-.logo img{
-    width: 70px;
-    margin: 0 12px;
-    cursor: pointer;
+.logo2 img{
+    width: 80px;
+    margin: 0px 150px;
+    display:flex;
+    justify-content:center;
 }

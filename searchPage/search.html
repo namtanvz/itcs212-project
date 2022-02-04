@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Search page test</title>
+        <title>Search page test</title>
         <link rel="stylesheet" href="search.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../footer/footer.css">
+        <link rel="stylesheet" href="../navigation/navigation.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
             $(function() {
             $(".toggle").on("click", function() {
@@ -16,21 +16,16 @@
                 }
             });
         });
-            </script>
+        </script>
     </head>
     <body>
-        <nav>
-            <ul class='menu'>
-                <li class='logo'> <a href="#"> <img src="images/logo white.png" class="logo"> </li>
-                <li class='item'> <a href="#"> Home </a> </li>
-                <li class='item'> <a href="#"> About Us </a></li>
-                <li class='item'> <a href="#"> Search </a> </li>
-                <li class="item button"><a href="#"> Log In </a> </li>
-                <!-- <li class='item button secondary'> <a href="#"> Sign up </li> -->
-                <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li>
-                <!-- <a class="nav-link" href='#'> <button> Login </button></a> -->
-            </ul>
-        </nav>
+        <div id="nav"> 
+        <script>
+            $.get("../navigation/navigation.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+        </script>
+        </div> 
         <div class="searchbar">
             <form>
                 <div class="basic">
@@ -38,7 +33,6 @@
                         <input id="search" type="text" placeholder="What are you looking for?">
                     </div>
                 </div>
-            
                 <div class="advance">
                     <span class="description"> Advance search </span>
                 <div class="row">
@@ -91,6 +85,12 @@
             </div> 
             </form>
         </div>
-        
+        <div id="footer">
+            <script>
+                $.get("../footer/footer.html", function(data){
+                    $("#footer").replaceWith(data);
+                });
+            </script> 
+        </div>
     </body>
 </html>

@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
     <link rel="stylesheet" href="result.css">
+    <link rel="stylesheet" href="../navigation/navigation.css">
+    <link rel="stylesheet" href="../footer/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-        <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
         $(function() {
         $(".toggle").on("click", function() {
             if ($(".item").hasClass("active")) {
@@ -24,18 +22,13 @@
     </script>
 </head>
 <body>
-        <nav>
-            <ul class='menu'>
-                <li class='logo'> <a href="#"> <img src="images/logo white.png" class="logo"> </li>
-                <li class='item'> <a href="#"> Home </a> </li>
-                <li class='item'> <a href="#"> About Us </a></li>
-                <li class='item'> <a href="#"> Search </a> </li>
-                <li class="item button"><a href="#"> Log In </a> </li>
-                <!-- <li class='item button secondary'> <a href="#"> Sign up </li> -->
-                <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li>
-                <!-- <a class="nav-link" href='#'> <button> Login </button></a> -->
-            </ul>
-        </nav>
+    <div id="nav">
+        <script>
+            $.get("../navigation/navigation.html", function(data){
+                $("#nav").replaceWith(data);
+            });
+        </script> 
+        </div>
         <div class="row">
             <div class="col-1">
                 <h2>STREETWAR VEST TECHWEAR</h2><br>
@@ -65,11 +58,13 @@
                 <img src="images/tc01.jpg" class="cloth1">
             </div>
         </div>
-        <div class="social">
-            <img src="images/fb.png">
-            <img src="images/tw.png">
-            <img src="images/ig.png">
-        </div>
+    </div>
+    <div id="footer">
+        <script>
+            $.get("../footer/footer.html", function(data){
+                $("#footer").replaceWith(data);
+            });
+        </script> 
     </div>
 </body>
 </html>

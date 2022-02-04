@@ -2,41 +2,33 @@
 <html lang="en">
     <head>
         <title>About us</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/5083ef2f37.js" crossorigin="anonymous"></script>
         <link href="AboutUs.css" rel="stylesheet">
-        <script
-        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <link rel="stylesheet" href="../footer/footer.css">
+        <link rel="stylesheet" href="../navigation/navigation.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
-        $(function() {
-        $(".toggle").on("click", function() {
-            if ($(".item").hasClass("active")) {
-                $(".item").removeClass("active");
-            } else {
-                $(".item").addClass("active");
-            }
+            $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
         });
-    });
         </script>
     </head>
     <body>
-        <nav>
-            <ul class='menu'>
-                <li class='logo'> <a href="#"> <img src="images/logo white.png" class="logo"> </li>
-                <li class='item'> <a href="#"> Home </a> </li>
-                <li class='item'> <a href="#"> About Us </a></li>
-                <li class='item'> <a href="#"> Search </a> </li>
-                <li class="item button"><a href="#"> Log In </a> </li>
-                <!-- <li class='item button secondary'> <a href="#"> Sign up </li> -->
-                <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li>
-                <!-- <a class="nav-link" href='#'> <button> Login </button></a> -->
-            </ul>
-        </nav>
+        <div id="nav"> 
+            <script>
+                $.get("../navigation/navigation.html", function(data){
+                    $("#nav").replaceWith(data);
+                });
+            </script>
+            </div> 
         <div class="container">
             <div class="header">
                 <h1>Our Team</h1>
@@ -45,7 +37,7 @@
             <div class="team">
                 <img src="images/Doungnapat_Pro.png"  alt="">
                 <div class="name">Doungnapat Thiansukont</div>
-                <div class="desig">DEVELOPER</div>
+                <div class="desig">DEVELOPER/BOSS</div>
                 <div class="about">Doungnapat or Aom is someone who is like a manager of group 15.
                     She will remind the schedule for teammate and check progress from time to time
                     In the group project, she responsible for login page,admistration page and user page.
@@ -96,6 +88,13 @@
                 </div>
             </div>
             </div>
+        </div>
+        <div id="footer">
+            <script>
+                $.get("../footer/footer.html", function(data){
+                    $("#footer").replaceWith(data);
+                });
+            </script> 
         </div>
     </body>
 </html>
