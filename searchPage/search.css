@@ -64,7 +64,7 @@
 .display{
   display: flex;
   position: relative;
-  margin: 50px;
+  margin: 60px;
   justify-content: space-around;
 }
 .img{
@@ -79,10 +79,12 @@
 }
 
 .card h1{
+  padding-left: 10px;
   font-size: 18px;
 }
 .price{
   color: grey;
+  padding-left: 10px;
 
 }
 
