@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search page test</title>
+        <title>Search Page</title>
+        
+        <!-- Link to each css files -->
         <link rel="stylesheet" href="search.css">
         <link rel="stylesheet" href="../footer/footer.css">
         <link rel="stylesheet" href="../navigation/navigation.css">
+        
+        <!-- Script for linking other HTML files -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="icon" href="/resultPage/images/logo black.png" type="image/icon type">
+        
+        <!-- Link for the search icon -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Script for toggle the hamburger menu -->
         <script>
             $(function() {
             $(".toggle").on("click", function() {
@@ -21,6 +28,7 @@
         </script>
     </head>
     <body>
+        <!-- Linking the navigation.html to this file -->
         <div id="nav"> 
         <script>
             $.get("../navigation/navigation.html", function(data){
@@ -28,18 +36,27 @@
             });
         </script>
         </div> 
+        
+        <!-- Div for title header section -->
         <div class="section-header">
             <h1 class="title">
                 Search
             </h1>
         </div>
+
+        <!-- Div for the search bar and the search button -->
+        
         <div class="search-container">
             <div class="search">
             <input class="searchbar"type="text" placeholder="Search">
             <button type="submit" class="searchbtn"><i class="fa fa-search"></i></button>
             </div>            
         </div>
+
+        <!-- Used as line to divide the search and result section -->
         <hr class="mid">
+        
+        <!-- Div for result header section -->
         <div class="section-header">
             <div class="result">
                 <h2 class="title">
@@ -48,6 +65,9 @@
             </div>
         </div>
         <div class="display">
+
+            <!-- Display the items in card -->
+            
             <div class="card">
                 <img src="..\resultPage\images\tc01.jpg" class="img">
                 <h1> Street T-shirt</h1>
@@ -57,14 +77,11 @@
                         <button> Click! </button></p>
                     </a>
             </div>
-            
             <div class="card">
                 <img src="assests\tshirt2.jpg" class="img">
                 <h1> Street T-shirt</h1>
                 <p class="price"> 799 Baht </p>
-                <p> 
-                        <button> Click! </button>
-                </p>
+                <p> <button> Click! </button> </p>
             </div>
             
             <div class="card">
@@ -81,6 +98,7 @@
             </div>    
         </div>
 
+        <!-- Linking the footer.html to this file -->
         <div id="footer">
             <script>
                 $.get("../footer/footer.html", function(data){
