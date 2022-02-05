@@ -23,13 +23,14 @@
     </script>
 </head>
 <body>
+    <!-- dispaly navigation bar -->
     <div id="nav"></div>
         <script>
             $.get("../navigation/navigation.html", function(data){
                 $("#nav").replaceWith(data);
             });
         </script> 
-        
+        <!-- display product information  -->
         <div class="row">
             <div class="col-1">
                 <h2>STREETWAR VEST TECHWEAR</h2><br>
@@ -53,13 +54,16 @@
                         </li>
                     </ul>
                 <h4>1899 bath</h4>
+                <!-- insert "BUY" button -->
                 <button type="button" class="buynow">Buy Now <img src="images/arrow.png"></button>
             </div>
+            <!-- inseert product picture -->
             <div  class="col-2">
                 <img src="images/tc01.jpg" class="cloth1">
             </div>
         </div>
     </div>
+    <!-- dispaly footer bar -->
     <div id="footer">
         <script>
             $.get("../footer/footer.html", function(data){

@@ -9,125 +9,129 @@ nav{
     background: #0e0c0a;
     padding: 5px 20px;
     letter-spacing: 3px;
-    font-family: sans-serif;
-    
+    font-family: sans-serif; 
   }
-  li {
+  
+li{
     list-style-type: none;
     
   }
-  a {
-    color: #edf0f1;
-    text-decoration: none;
+
+a{
+  color: #edf0f1;
+  text-decoration: none;
   }
   
-  a.loginbtn:hover{
-    background: linear-gradient(to left,#3d362c,#504f4f);
+a.loginbtn:hover{
+  background: linear-gradient(to left,#3d362c,#504f4f);
   }
   
-  a.text{
-    color: #edf0f1;
-    text-decoration: none;
-    position: relative;
+a.text{
+  color: #edf0f1;
+  text-decoration: none;
+  position: relative;
   }
   
-  a.text::before{
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #FFF;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
+a.text::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
   }
 
-  a.text:hover::before{
-    visibility: visible;
-    width:100%;
-  }
+a.text:hover::before{
+  visibility: visible;
+  width:100%;
+}
 
-  .menu li{
-    font-size: 12px;
-    padding: 15px 5px;
+.menu li{
+  font-size: 12px;
+  padding: 15px 5px;
     
   }
   
-  .menu li a{
-    display: block;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.4s ease-in-out;
+.menu li a{
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.4s ease-in-out;
   }
   
-  .logo {
-    position:relative; 
-    left:20px;
-    padding-top: 5px;
-    padding-right: 10px;
-    width: 50px;
+.logo {
+  position:relative; 
+  left:20px;
+  padding-top: 5px;
+  padding-right: 10px;
+  width: 50px;
   }
   
-  /* Mobile */
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items:center;
+  
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:center;
   }
-  .toggle {
-    order: 1;
+
+/* Order for flex */
+.toggle {
+  order: 1;
   }
   
-  .item.button {
-    order: 2;
+.item.button {
+  order: 2;
   }
   
-  .item {
-    width: 100%;
-    text-align: center;
-    order: 3;
-    display: none;
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
   }
   
-  .item.active {
-    display: block;
+.item.active {
+  display: block;
   }
-  .toggle{
-    cursor: pointer;
-  }
-  
-  .bar{
-    background: #999;
-    display: inline-block;
-    height: 2px;
-    position: relative; 
-    width: 16px;
+
+.toggle{
+  cursor: pointer;
   }
   
-  .bar::before,.bar::after{
-    background: #999;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: absolute; 
-    width: 16px;
+.bar{
+  background: #999;
+  display: inline-block;
+  height: 2px;
+  position: relative; 
+  width: 16px;
+}
+  
+.bar::before,.bar::after{
+  background: #999;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: absolute; 
+  width: 16px;
+}
+  
+.bar::before{
+  top: 5px;
+}
+  
+.bar::after{
+  top: -5px;
   }
   
-  .bar::before{
-    top: 5px;
-  }
+  /* For responsive web */
   
-  .bar::after{
-    top: -5px;
-  }
-  
-  /* Tablet */
-  
-  @media all and (min-width:468px){
+@media all and (min-width:468px){
     .menu{
-        justify-content: center;
+      justify-content: center;
     }
     .logo{
         flex: 1;
@@ -149,11 +153,6 @@ nav{
         border-radius:50em;
     }
     
-    /* .button a:hover{
-        transition: all 0.25s ease 0s;
-        background: #006d6d;
-        border-color: #005959;
-    } */
   }
   
   @media all and (min-width: 768px){

@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>test login page</title>
-        <meta charset="utf-8">
+        <!-- title on the tab -->
+        <title>login</title>
+        <!-- Link for logo to appear  on the tab -->
+        <link rel="icon" href="/resultPage/images/logo black.png" type="image/icon type">
+        <!-- Link to each css files -->
         <link rel="stylesheet" href="../footer/footer.css">
         <link rel="stylesheet" href="../navigation/navigation.css">
-        <meta name="viewpoint" content="width=devixe-width,initial-scale=1">
         <link rel="stylesheet" href="login_css.css">
+        <!-- viewpoint scale -->
+        <meta name="viewpoint" content="width=devixe-width,initial-scale=1">
+        <!-- Kit code and CDN for Font awsome icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/5083ef2f37.js" crossorigin="anonymous"></script>
+        <!-- Script for linking other HTML files -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <link rel="icon" href="/resultPage/images/logo black.png" type="image/icon type">
     </head>
             <body>
+                <!-- background  -->
                 <div class="bg">
+                    <!-- Linking the navigation.html to this file -->
                     <div id="nav"> </div> 
                         <script>
                                 $.get("../navigation/navigation.html", function(data){
                                     $("#nav").replaceWith(data);
                                 });
                         </script>
-                        
+                    <!-- div for form box -->
                     <div class="formbox">
                         <div class="logo2">
                             <img src="img\logo white.png">
                         </div>
+                        <!-- div for button boxes (login and register) -->
                         <div class=buttonbox>
                             <div id="btn"></div>
                             <button type="button" class="tog-button" onclick="login()">Sign in</button>
                             <button type="button" class="tog-button" onclick="register()">Sign up</button>
                         </div>
+
+                        <!-- login input boxes and icon) -->
                         <form class="input" id="login">
                             <div class="input-user-pass">
                                 <i class="fas fa-envelope" aria-hidden="true"></i>
@@ -42,6 +52,7 @@
                             <input type="checkbox" class="checkbox"><span>Remember me</span>
                             <button type="submit" class="sub-btn">Sign in</button>
                         </form>
+                        <!-- register input boxes and icon) -->
                         <form class="input" id="register">
                             <div class="input-user-pass">
                                 <i class="fas fa-user" aria-hidden="true"></i>
@@ -59,6 +70,7 @@
                             <button type="submit" class="sub-btn">Sign up</button>
                         </form>
                     </div>
+                     <!-- Linking the footer.html to this file -->
                     <div id="footer">
                         <script>
                             $.get("../footer/footer.html", function(data){
@@ -68,6 +80,7 @@
                     </div>   
                 </div>
 
+                 <!-- script for switch between login and register -->
                 <script>
                     var x=document.getElementById("login");
                     var y=document.getElementById("register");
