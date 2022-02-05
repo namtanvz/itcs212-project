@@ -8,12 +8,12 @@
 - Login Page
 - User/Admin
 
-### Oat 
+### Oat (The Logo Designer)
 - Result Page
 
-### Mook
+### Mook (Who came up with the website theme)
 - Homepage/Landing Page
 
-### The one who owns this repo and cleaning this up
+### Namtan (The repo owner who messes with the Git)
 - Search Page
 - Navigation Bar
