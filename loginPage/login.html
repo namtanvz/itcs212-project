@@ -9,24 +9,42 @@
         <link rel="stylesheet" href="../footer/footer.css">
         <link rel="stylesheet" href="../navigation/navigation.css">
         <link rel="stylesheet" href="login_css.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <!-- Link to navigation.css -->
+        <link rel="stylesheet" href="navigation.css">
+        <!-- JS script for the hamburger menu -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <!-- viewpoint scale -->
         <meta name="viewpoint" content="width=devixe-width,initial-scale=1">
         <!-- Kit code and CDN for Font awsome icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/5083ef2f37.js" crossorigin="anonymous"></script>
         <!-- Script for linking other HTML files -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     </head>
+
             <body>
                 <!-- background  -->
                 <div class="bg">
+                    <!-- nav bar -->
+                    <nav>
+                        <ul class='menu'>
+                            <li class='logo'> <a href="#"> <img src="../images/logo white.png" class="logo"> </li>
+                            <li class='item'> <a href="../homepage_techwear/Techwear2.html" class="text"> Home </a> </li>
+                            <li class='item'> <a href="../AboutUs/AboutUs.html" class="text"> About Us </a></li>
+                            <li class='item'> <a href="../searchPage/search.html" class="text"> Search </a> </li>
+                            <li class="item button"><a href="../loginPage/login.html" class="loginbtn"> Log In </a> </li>
+                            <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li>
+                        </ul>
+                    </nav>
                     <!-- Linking the navigation.html to this file -->
-                    <div id="nav"> </div> 
+                    <!--<div id="nav"> </div> 
                         <script>
                                 $.get("../navigation/navigation.html", function(data){
                                     $("#nav").replaceWith(data);
                                 });
-                        </script>
+                        </script>-->
                     <!-- div for form box -->
                     <div class="formbox">
                         <div class="logo2">
@@ -71,14 +89,57 @@
                         </form>
                     </div>
                      <!-- Linking the footer.html to this file -->
-                    <div id="footer">
+                    <!-- <div id="footer">
                         <script>
                             $.get("../footer/footer.html", function(data){
                                 $("#footer").replaceWith(data);
                             });
                         </script> 
-                    </div>   
+                    </div> -->
+                    <!-- footer-->
+                <footer class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col">
+                                <h4>company</h4>
+                                <ul>
+                                    <li><a href="#">about us</a></li>
+                                    <li><a href="#">our services</a></li>
+                                    <li><a href="#">privacy policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>get help</h4>
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">shipping</a></li>
+                                    <li><a href="#">returns</a></li>
+                                    <li><a href="#">order status</a></li>
+                                    <li><a href="#">payment options</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>online shop</h4>
+                                <ul>
+                                    <li><a href="#">watch</a></li>
+                                    <li><a href="#">bag</a></li>
+                                    <li><a href="#">shoes</a></li>
+                                    <li><a href="#">dress</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-col">
+                                <h4>follow us</h4>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+               </footer>
                 </div>
+        
 
                  <!-- script for switch between login and register -->
                 <script>

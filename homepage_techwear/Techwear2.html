@@ -3,14 +3,14 @@
 
 <head>
     <title>Techwear Clothes</title>
+    <!-- Link all css -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="../navigation/navigation.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="icon" href="/resultPage/images/logo black.png" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
+    <!-- Script for nav bar -->
     <script>
         $(function() {
         $(".toggle").on("click", function() {
@@ -25,13 +25,25 @@
 </head>
 
 <body>
-    <div id="nav"> </div>
+    <!-- <div id="nav"> </div>
         <script>
             $.get("../navigation/navigation.html", function(data){
                 $("#nav").replaceWith(data);
             });
-        </script>
+        </script> -->
         
+        <!-- Navigation bar -->
+        <nav>
+            <ul class='menu'>
+                <li class='logo'> <a href="#"> <img src="../images/logo white.png" class="logo"> </li>
+                <li class='item'> <a href="../homepage_techwear/Techwear2.html" class="text"> Home </a> </li>
+                <li class='item'> <a href="../AboutUs/AboutUs.html" class="text"> About Us </a></li>
+                <li class='item'> <a href="../searchPage/search.html" class="text"> Search </a> </li>
+                <li class="item button"><a href="../loginPage/login.html" class="loginbtn"> Log In </a> </li>
+                <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li>
+            </ul>
+        </nav>
+     <!-- first teaser section -->
     <div class="parallax-container" style="height: 850px;">
         <img class="parallax" src="https://i.pinimg.com/originals/c4/5d/b6/c45db61b12136326cde57c13af9c4e2e.gif" alt="">
         <div class="teaser">
@@ -41,6 +53,7 @@
             </div>
         </div>
     </div>
+    <!-- Second teaser section -->
     <div class="parallax-container" style="height: 550px;">
         <img class="parallax" src="https://i.pinimg.com/564x/17/c9/dc/17c9dc6238590e0c29dfd81c78fe5e33.jpg" alt="">
         <div class="teaser">
@@ -50,6 +63,7 @@
             </div>
         </div>
     </div>
+    <!-- Third teaser section -->
     <div class="parallax-container" style="height: 700px;">
         <img class="parallax" src="" alt="">
         <div class="teaser">
@@ -59,7 +73,7 @@
             </div>
         </div>
     </div>
-
+    <!-- article one -->
     <article>
         <h1>
             Range of Motion and Comfort
@@ -70,6 +84,7 @@
         <p>One can pick up a pair of pants or a shell to complement an existing wardrobe and slot that piece in seamlessly. However, to capture the full techwear aesthetic, there are a few common elements.</p>
     </article>
 
+    <!-- last section -->
     <div class="parallax-container" style="height: 1000px;">
         <img class="parallax" src="https://i.pinimg.com/564x/ca/37/99/ca3799a9673b17da4e2e34a9b47cfac7.jpg" alt="">
         <div class="teaser">
@@ -79,13 +94,59 @@
             </div>
         </div>
     </div>
-    <div id="footer">
+    
+    <!-- <div id="footer">
         <script>
             $.get("../footer/footer.html", function(data){
                 $("#footer").replaceWith(data);
             });
         </script> 
-    </div>
+    </div> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+   
+    <!-- Script for parallax bg -->
     <script src="parallax.min.js"></script>
     <script>
         var parallax = new Parallax('.parallax');

@@ -9,25 +9,48 @@
         <link rel="stylesheet" href="search.css">
         <link rel="stylesheet" href="../footer/footer.css">
         <link rel="stylesheet" href="../navigation/navigation.css">
+        <!-- Icon for footer -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         
         <!-- Script for linking other HTML files -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
         
         <!-- Link for the search icon -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <script>
+            $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+        </script>
     </head>
     <body>
         <!-- Linking the navigation.html to this file -->
-        <div id="nav"> 
+        <!-- <div id="nav"> 
         <script>
             $.get("../navigation/navigation.html", function(data){
                 $("#nav").replaceWith(data);
             });
         </script>
-        </div> 
+        </div>  -->
         
         <!-- Div for title header section -->
+        <nav>
+            <ul class='menu'>
+                <li class='logo'> <a href="#"> <img src="../images/logo white.png" class="logo"> </li>
+                <li class='item'> <a href="../homepage_techwear/Techwear2.html" class="text"> Home </a> </li>
+                <li class='item'> <a href="../AboutUs/AboutUs.html" class="text"> About Us </a></li>
+                <li class='item'> <a href="../searchPage/search.html" class="text"> Search </a> </li>
+                <li class="item button"><a href="../loginPage/login.html" class="loginbtn"> Log In </a> </li>
+                <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li>
+            </ul>
+        </nav>
+        
         <div class="section-header">
             <h1 class="title">
                 Search
@@ -88,13 +111,55 @@
             </div>    
         </div>
 
-        <!-- Linking the footer.html to this file -->
+        <!-- Linking the footer.html to this file
         <div id="footer">
             <script>
                 $.get("../footer/footer.html", function(data){
                     $("#footer").replaceWith(data);
                 });
             </script> 
-        </div>
+        </div> -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
     </body>
 </html>
