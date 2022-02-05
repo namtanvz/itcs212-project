@@ -64,8 +64,8 @@
 .display{
   display: flex;
   position: relative;
-  margin: 25px;
-  justify-content: space-evenly;
+  margin: 50px;
+  justify-content: space-around;
 }
 .img{
   width:  300px;
