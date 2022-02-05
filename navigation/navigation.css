@@ -16,16 +16,38 @@ nav{
     list-style-type: none;
     
   }
-  
-  a{
+  a {
     color: #edf0f1;
     text-decoration: none;
   }
-  a:hover{
-    color: rgb(139, 150, 150);
   
+  a.loginbtn:hover{
+    background: linear-gradient(to left,#3d362c,#504f4f);
   }
   
+  a.text{
+    color: #edf0f1;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  a.text::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a.text:hover::before{
+    visibility: visible;
+    width:100%;
+  }
+
   .menu li{
     font-size: 12px;
     padding: 15px 5px;
@@ -49,10 +71,6 @@ nav{
   
   /* Mobile */
   .menu {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items:center;*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
