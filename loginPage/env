@@ -1,0 +1,4 @@
+MYSQL_USERNAME="auth"
+MYSQL_PASSWORD="itcs212"
+MYSQL_DATABASE="stw"
+MYSQL_HOST="localhost"

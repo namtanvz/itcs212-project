@@ -2,30 +2,29 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background: rgb(208, 205, 255);
     font-family: sans-serif;
 }
 
-
-li, a, button {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+.logo{
+    width: 60px;
 }
 
-
+li,a{
+    text-decoration: none;
+    color: #edf0f1;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background: #0e0c0a;
 }
 
-.logo{
-    width: 60px;
-}
+
 
 .menu{
     list-style-type: none;
@@ -33,18 +32,40 @@ header {
 
 .menu li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 20px 0px 20px;
+    
+}
+.text {
+    display: inline-block;
+    color: #edf0f1;
+    position: relative;
+
 }
 
-.menu li a{
-    transition: all 0.3 ease 0s;
+.text:after{
+    content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.text:hover:after{
+visibility: visible;
+  width:100%;
 }
 
 .icon {
     list-style-type: none;
+    
 }
 
 .icon li{
     display: inline-block;
-    justify-content: center;
+    padding: 0px 0px 0px 20px;
+    
 }
