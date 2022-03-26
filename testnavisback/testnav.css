@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    background: black;
+    background: rgb(208, 205, 255);
     font-family: sans-serif;
 }
 
@@ -20,9 +20,31 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 30px 10%;
 }
 
 .logo{
-    width: 80px;
+    width: 60px;
+}
+
+.menu{
+    list-style-type: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.menu li a{
+    transition: all 0.3 ease 0s;
+}
+
+.icon {
+    list-style-type: none;
+}
+
+.icon li{
+    display: inline-block;
+    justify-content: center;
 }
