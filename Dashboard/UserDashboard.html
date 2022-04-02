@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Link to navigation.css -->
+    <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="../testnavisback/testnav.css">
+    <script src="https://kit.fontawesome.com/dacc59ddc6.js" crossorigin="anonymous"></script>
+    <!-- JS script for the hamburger menu -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+
+    <!-- Script for the hamburger menu -->
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <a href="#"> <img class="logo" src="../icons/logo white.png">
+            <nav>
+                <ul class='menu'>
+                    <li class='item'> <a href="../homepage_techwear/Techwear2.html" class="text"> Home </a> </li>
+                    <li class='item'> <a href="../AboutUs/AboutUs.html" class="text"> About Us </a></li>
+                    <li class='item'> <a href="../searchPage/search.html" class="text"> Search </a> </li>
+                    <!-- <li class="item button"><a href="../loginPage/login.html" class="loginbtn"> Log In </a> </li> -->
+                    <!-- <li class= 'toggle'> <a href="#"> <span class='bar'> </span></a></li> -->
+                </ul>
+            </nav>
+            <ul class='icon'>
+                <lu>
+                    <a href="../loginPage/login.html"> <i class="fa-solid fa-user"></i> </a>
+                </lu>
+                <li>
+                    <a href="#"> <i class="fa-solid fa-heart"></i> </a>
+                </li>
+                <li>
+                    <a href="#"> <i class="fa-solid fa-cart-shopping"></i> </a>
+                </li>
+            </ul>
+
+
+
+    </header>
+    <h1 class="page-title">My Account</h1>
+
+</body>
+
+<div class="woocommerce">
+    <div id="woocommerce_account" class="w_acc">
+        <p style="text-align: center;">( หากไม่ได้รับสินค้าก็เรื่องของเธอจ้า ╰ (▔∀▔) ╯ )</p>
+    </div>
+    <div class="MyAccount">
+        <ul>
+            <li class="item2"><a href="" class="text2">Orders</a></li>
+            <li class="item2"><a href="" class="text2">Payment History</a></li>
+            <li class="item2"><a href="" class="text2">Addresses</a></li>
+            <li class="item2"><a href="" class="text2">Account details</a></li>
+            <li class="item2"><a href="" class="text2">Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="line"></div>
+
+</html>
